@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swimmable — is the beach okay today?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Before you pack the towel</p>
+    <h1>Is it safe to swim today?</h1>
+    <p class="sub">Drop a pin where you are (or let us find you), and we'll check the nearest beaches — live wave and wind data, turned into one word.</p>
+  </header>
+
+  <div id="nameGate" class="card name-gate">
+    <label for="nameInput">What's your name?</label>
+    <div class="row">
+      <input id="nameInput" type="text" placeholder="e.g. Youssef" maxlength="40">
+      <button id="nameSubmit">Continue</button>
+    </div>
+  </div>
+
+  <div id="mainApp" class="hidden">
+    <p class="greeting" id="greeting"></p>
+
+    <div class="locate-row">
+      <button id="useLocation">📍 Use my location</button>
+      <span class="or">or tap the map</span>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="legend">
+      <span><i class="dot b-foam"></i>Convenient</span>
+      <span><i class="dot b-coral"></i>Modest</span>
+      <span><i class="dot b-danger"></i>Dangerous</span>
+    </div>
+
+    <div id="status" class="status-line"></div>
+    <div class="beaches" id="beaches"></div>
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+  { "name": "Agadir Beach",            "lat": 30.4202, "lon": -9.5981 },
+  { "name": "Taghazout",               "lat": 30.5459, "lon": -9.7104 },
+  { "name": "Tamraght",                "lat": 30.4917, "lon": -9.6822 },
+  { "name": "Imsouane",                "lat": 30.8300, "lon": -9.8236 },
+  { "name": "Essaouira Beach",         "lat": 31.5085, "lon": -9.7595 },
+  { "name": "Oualidia",                "lat": 32.7357, "lon": -9.0294 },
+  { "name": "Ain Diab, Casablanca",    "lat": 33.5928, "lon": -7.6650 },
+  { "name": "Plage des Nations, Rabat","lat": 34.0989, "lon": -6.8420 },
+  { "name": "Plage Malabata, Tangier", "lat": 35.7844, "lon": -5.7897 },
+  { "name": "Dakhla Lagoon",           "lat": 23.7185, "lon": -15.9370 }
+]

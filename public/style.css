@@ -1,0 +1,59 @@
+:root {
+  --navy:#0B3F5C; --foam:#3F9C8F; --coral:#E0763F; --danger:#B8402F;
+  --cream:#FAF7F1; --ink:#132630; --card-bg:#FFFFFF; --border:#D9D0BC;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; background:var(--cream); color:var(--ink);
+  font-family:'Inter',-apple-system,system-ui,sans-serif; line-height:1.5;
+}
+h1,h2,h3 { font-family:'Fraunces',Georgia,serif; margin:0; }
+.wrap { max-width:780px; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+.hidden { display:none; }
+
+header { margin-bottom:1.75rem; }
+header p.eyebrow { margin:0 0 .4rem; color:var(--foam); font-weight:600; font-size:.95rem; }
+header h1 { font-size:clamp(1.9rem,5vw,2.6rem); font-weight:700; max-width:16ch; }
+header p.sub { max-width:52ch; margin-top:.75rem; opacity:.8; font-size:1.02rem; }
+
+.card { background:var(--card-bg); border:1px solid var(--border); border-radius:14px; padding:1.3rem; }
+.name-gate label { display:block; font-weight:600; margin-bottom:.6rem; }
+.name-gate .row { display:flex; gap:.6rem; }
+.name-gate input {
+  flex:1; padding:.65rem .8rem; border-radius:8px; border:1px solid var(--border);
+  font-size:1rem; font-family:inherit;
+}
+button {
+  background:var(--navy); color:#fff; border:none; border-radius:8px;
+  padding:.65rem 1.1rem; font-size:.95rem; font-weight:600; cursor:pointer; font-family:inherit;
+}
+button:hover { opacity:.9; }
+
+.greeting { font-size:1.05rem; margin:0 0 1rem; }
+.locate-row { display:flex; align-items:center; gap:.75rem; margin-bottom:1rem; }
+.locate-row .or { opacity:.6; font-size:.9rem; }
+
+#map { height:320px; border-radius:14px; border:1px solid var(--border); margin-bottom:1.25rem; }
+
+.legend { display:flex; gap:1.25rem; flex-wrap:wrap; margin-bottom:1.25rem; font-size:.9rem; }
+.legend span { display:flex; align-items:center; gap:.45rem; }
+.dot { width:.65rem; height:.65rem; border-radius:50%; display:inline-block; }
+.b-foam { background:var(--foam); } .b-coral { background:var(--coral); } .b-danger { background:var(--danger); } .b-grey { background:#9AA5AB; }
+
+.status-line { font-size:.9rem; opacity:.7; margin-bottom:1rem; min-height:1.2em; }
+
+.beaches { display:grid; gap:1rem; }
+.beach-card {
+  background:var(--card-bg); border:1px solid var(--border); border-radius:14px;
+  padding:1.2rem 1.3rem; display:grid; grid-template-columns:1fr auto; gap:.5rem 1rem; align-items:center;
+}
+.beach-card .name { font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem; }
+.beach-card .meta { grid-column:1/2; font-size:.85rem; opacity:.7; }
+.badge {
+  grid-row:1/3; justify-self:end; align-self:center; padding:.4rem .85rem; border-radius:999px;
+  font-weight:600; font-size:.85rem; color:#fff; white-space:nowrap;
+}
+.beach-card .why {
+  grid-column:1/3; font-size:.9rem; margin-top:.35rem; padding-top:.6rem;
+  border-top:1px solid var(--border); opacity:.85;
+}
